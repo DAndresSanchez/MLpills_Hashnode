@@ -59,7 +59,7 @@ There are several spikes or "lollipops" on it. They indicate the correlation of 
 
 ## Build your own model
 
-If you want to know how to build your own model, you can follow the step-by-step guide I shared in Twitter:
+If you want to know how to build your own model, you can follow the step-by-step guide I shared on Twitter:
 
 %[https://twitter.com/daansan_ml/status/1592619249792475136?s=20]
 
