@@ -66,7 +66,7 @@ However, if our data exhibits seasonality, we will require a Seasonal ARIMA mode
 
 A **SARIMA(p,d,q)(P,D,Q)m** model is defined by seven parameters. Three come from the ARIMA part and an additional four parameters characterise the modelling of the seasonal element:
 
-#### Trend:
+#### Trend
 
 *   *p* : trend autoregressive order
     
@@ -75,7 +75,7 @@ A **SARIMA(p,d,q)(P,D,Q)m** model is defined by seven parameters. Three come fro
 *   *q* : trend moving average order
     
 
-#### Seasonality:
+#### Seasonality
 
 *   *P* : seasonal autoregressive order
     
