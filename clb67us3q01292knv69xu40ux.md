@@ -1,4 +1,4 @@
-# ARIMA models
+# Seasonal ARIMA
 
 Time series can be seasonal. What does this mean? It means that our data exhibits a season or cycle that regularly repeats, for example, weekly, monthly or annually.
 
