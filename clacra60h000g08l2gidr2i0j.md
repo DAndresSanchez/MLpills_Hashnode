@@ -1,4 +1,4 @@
-# ARIMA models
+# Introduction to ARIMA models
 
 A time series is a series of data points ordered in time. Time is often the independent variable and the objective is usually to make a forecast for the future.
 
