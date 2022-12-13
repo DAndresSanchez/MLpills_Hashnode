@@ -1,4 +1,4 @@
-# ARIMA models
+# Parameters selection in ARIMA models
 
 ARIMA models are a simple but powerful way of modelling time series. We saw that in the previous [part](https://mlpills.hashnode.dev/arima-models).
 
