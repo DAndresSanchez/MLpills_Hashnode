@@ -29,7 +29,7 @@ ARCH models the variance of the time series as a regression of the values of a n
 
 Despite ARCH being called "Auto-Regressive", resembles more a Moving Average equation.
 
-### ARCH issues
+### Issues with ARCH
 
 ARCH models are very useful, however, they have three main issues:
 
