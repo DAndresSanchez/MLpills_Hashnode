@@ -12,20 +12,27 @@ High volatility makes forecasting harder. ARCH models can be helpful in predicti
 
 ARCH stands for "*Auto-Regressive Conditional Heteroskedasticity*":
 
-Heteroskedasticity: it refers to volatility or variance of the time series data Conditional: it means that the volatility is not fixed over time, it varies with time. Auto-Regressive: the volatility at a certain time point will depend on previous timesteps We use ARCH models for the variance, whereas we were using ARMA for the mean.
+*   Heteroskedasticity: it refers to volatility or variance of the time series data
+    
+*   Conditional: it means that the volatility is not fixed over time, it varies with time.
+    
+*   Auto-Regressive: the volatility at a certain time point will depend on previous timesteps
+    
 
-The ARCH model represents the error term (**εₜ**) as a product of:
+We use ARCH models for the variance, whereas we were using ARIMA for the mean.
+
+The ARCH model represents the error term (***εₜ***) as a product of:
 
 *   Standardised White Noise (random and unpredictable): ***ωₜ***
     
-*   Standard Deviation of a number "*p*" of previous periods: ***σₜ***
+*   Standard Deviation of a number *"q"* of previous periods: ***σₜ***
     
 
-![equation_arch.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1670426329293/NQPAabaPI.png align="center")
+$$\varepsilon_t = \omega_t \sigma_t$$
 
-ARCH models the variance of the time series as a regression of the values of a number "*p*" of previous squared errors:
+ARCH models the variance of the time series as a regression of the values of a number *"q"* of previous squared errors:
 
-![equation_arch2.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1670426389857/gHPvL4uNa.png align="center")
+$$\sigma_t^2=\alpha_0+\alpha_1\varepsilon_{t-1}^2 + ... +\alpha_q\varepsilon_{t-q}^2$$
 
 Despite ARCH being called "Auto-Regressive", resembles more a Moving Average equation.
 
@@ -44,13 +51,13 @@ ARCH models are very useful, however, they have three main issues:
 
 GARCH models are a type of time series model that is commonly used in finance to model the volatility of asset returns.
 
-GARCH stands for "*Generalised Autoregressive Conditional Heteroskedasticity*". It is a generalisation of the ARCH model that tries to address some of their issues.
+GARCH stands for *"Generalised Autoregressive Conditional Heteroskedasticity"*. It is a generalisation of the ARCH model that tries to address some of their issues.
 
 It extends the capabilities of ARCH models by including additional variables and terms in the model. While ARCH models only consider previous observations, GARCH also takes into account previous variance or volatility values. This adds the terms that resemble more to an Auto-Regressive model.
 
-GARCH models the variance of the time series as a regression of the values of a number "*p*" of previous squared errors and a number "*q*" of previous variance values.
+GARCH models the variance of the time series as a regression of the values of a number *"q"* of previous squared errors and a number *"p"* of previous variance values.
 
-![equation_garch.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1670426469335/2OeC53VHO.png align="center")
+$$\sigma_t^2=\alpha_0+\alpha_1\varepsilon_{t-1}^2 + ... +\alpha_q\varepsilon_{t-q}^2 + \beta_1\sigma_{t-1}^2 + ... +\beta_p\sigma_{t-p}^2$$
 
 ### Improvements of GARCH
 
@@ -67,7 +74,7 @@ However, GARCH models still exhibit some issues. For example, they are not able 
 
 There are some extensions of GARCH that are able to deal with these two effects, for example, AGARCH or EGARCH models.
 
-Estimation of parameters Similarly to what we saw in ARIMA models, the parameters "*p*" and "*q*" of the GARCH models can be estimated by plotting the ACF and PACF graphs of the squared observations.
+Estimation of parameters Similarly to what we saw in ARIMA models, the parameters *"q"* and *"p"* of the GARCH models can be estimated by plotting the ACF and PACF graphs of the squared observations.
 
 ## You can improve your ARIMA model!
 
