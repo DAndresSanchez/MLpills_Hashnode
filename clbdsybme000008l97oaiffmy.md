@@ -32,7 +32,7 @@ $$\varepsilon_t = \omega_t \sigma_t$$
 
 ARCH models the variance of the time series as a regression of the values of a number *"q"* of previous squared errors:
 
-$$\sigma_t^2=\alpha_0+\alpha_1\varepsilon_{t-1}^2 + ... +\alpha_q\varepsilon_{t-q}^2$$
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671210805277/4A_6JQ9kM.png align="center")
 
 Despite ARCH being called "Auto-Regressive", resembles more a Moving Average equation.
 
@@ -57,7 +57,7 @@ It extends the capabilities of ARCH models by including additional variables and
 
 GARCH models the variance of the time series as a regression of the values of a number *"q"* of previous squared errors and a number *"p"* of previous variance values.
 
-$$\sigma_t^2=\alpha_0+\alpha_1\varepsilon_{t-1}^2 + ... +\alpha_q\varepsilon_{t-q}^2 + \beta_1\sigma_{t-1}^2 + ... +\beta_p\sigma_{t-p}^2$$
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671210793059/S7SmfudTs.png align="center")
 
 ### Improvements of GARCH
 
