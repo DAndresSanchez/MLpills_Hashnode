@@ -16,7 +16,7 @@ We will always select the Windows installer (64-bit) marked as recommended, the 
 
 Once downloaded, double-click on it to start the installation.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671397689466/Ac6Sqz1oq.PNG align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671552728317/gzEGav0VC.png align="center")
 
 **Note:** Please make sure that you check the bottom left box that says "Add python.exe to PATH", this way Python will be accessible from any console and will make your life easier.
 
