@@ -6,7 +6,7 @@ In this post, we will go through how to set up a Python Data Science/ML environm
 
 The first thing we need to do is install Python. For that, you have to go to https://www.python.org/downloads/windows/ and download Python 3.10.X (by X I mean any version of Python that starts with 3.10, such as 3.10.9, 3.10.11), we won't be installing the latest version as tensorflow has no support for Python 3.11:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671397560209/ncLCS6JOD.PNG align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671552357928/xJMxUDzcy.png align="center")
 
 Once you click on that, it will bring you to a new screen where you will have to scroll down to the bottom and select the correct installer.
 
