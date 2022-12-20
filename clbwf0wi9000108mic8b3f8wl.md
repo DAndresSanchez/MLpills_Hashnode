@@ -1,6 +1,6 @@
 # How to setup your Data Science/ML environment in Windows
 
-In this post, we will go through how to set up a Python Data Science/ML environment. We will be covering both Windows and Linux. We will be installing TensorFlow, Keras, Numpy and Pandas, as well as creating a virtual environment for it.
+In this post, we will go through how to set up a Python Data Science/ML environment. We will be covering Windows only in this post. We will be installing TensorFlow, Keras, Numpy and Pandas, as well as creating a virtual environment for it.
 
 ## Windows
 
