@@ -6,7 +6,7 @@ We will go through how to set up a Python Data Science/ML environment. In this a
 
 ## Check Python
 
-First, make sure you have Python3 installed, it should be installed by default on any new Linux distribution, to do this open a terminal (Ctrl + Alt + T) and type "python3":
+First, make sure you have Python3 installed, it should be installed by default on any new Linux distribution, to do this open a terminal (Ctrl + Alt + T) and type `python3`:
 
 ```bash
 python3
@@ -62,4 +62,4 @@ pip3 install tensorflow keras numpy pandas
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671554805353/r-ad0924h.png align="center")
 
-Once done, you will have all the Data Science/ML environment tools that will be covered in this blog. In future tutorials, we will make use of these tools to build different ML solutions to real life problems.
+Once done, you will have all the Data Science/ML environment tools that will be covered in this blog. In future tutorials, we will make use of these tools to build different ML solutions to real-life problems.
