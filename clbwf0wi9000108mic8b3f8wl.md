@@ -34,7 +34,7 @@ Then, in the terminal type Python and press enter, you should see something simi
 
 That is the Python command line, we will go deeper in the following lessons. If you forgot to check the *"Add python.exe to PATH"* checkbox on the installer you will see an error. Just relaunch the installer checking the box this time around.
 
-Now, we need to install a couple of python libraries, first of all, exit the Python command line by writing exit() and pressing enter, then write the command pip install virtualenv:
+Now, we need to install a couple of python libraries, first of all, exit the Python command line by typing `exit()` and pressing enter, then type the command `pip install virtualenv`:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671398205523/lDy9-dY1x.PNG align="center")
 
@@ -70,4 +70,4 @@ pip3 install tensorflow keras numpy pandas
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671398770359/LhbqbF_a5.PNG align="center")
 
-Once done, you will have all the Data Science/ML environment tools that will be covered in this blog. In future tutorials, we will make use of these tools to build different ML solutions to real life problems.
+Once done, you will have all the Data Science/ML environment tools that will be covered in this blog. In future tutorials, we will make use of these tools to build different ML solutions to real-life problems.
