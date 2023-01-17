@@ -12,20 +12,20 @@ High volatility makes forecasting harder. ARCH models can be helpful in predicti
 
 ARCH stands for "*Auto-Regressive Conditional Heteroskedasticity*":
 
-*   Heteroskedasticity: it refers to volatility or variance of the time series data
+* Heteroskedasticity: it refers to volatility or variance of the time series data
     
-*   Conditional: it means that the volatility is not fixed over time, it varies with time.
+* Conditional: it means that the volatility is not fixed over time, it varies with time.
     
-*   Auto-Regressive: the volatility at a certain time point will depend on previous timesteps
+* Auto-Regressive: the volatility at a certain time point will depend on previous timesteps
     
 
-We use ARCH models for the variance, whereas we were using ARIMA for the mean.
+We use ARCH models for the variance, whereas we were using [ARIMA](https://mlpills.dev/time-series/introduction-to-arima-models/) for the mean.
 
 The ARCH model represents the error term (***εₜ***) as a product of:
 
-*   Standardised White Noise (random and unpredictable): ***ωₜ***
+* Standardised White Noise (random and unpredictable): ***ωₜ***
     
-*   Standard Deviation of a number *"q"* of previous periods: ***σₜ***
+* Standard Deviation of a number *"q"* of previous periods: ***σₜ***
     
 
 $$\varepsilon_t = \omega_t \sigma_t$$
@@ -40,11 +40,11 @@ Despite ARCH being called "Auto-Regressive", resembles more a Moving Average equ
 
 ARCH models are very useful, however, they have three main issues:
 
-1.  They are not good at modelling persistent volatility. For example, there may be periods that have more volatility than others, in which the volatility persists or stays high or low for some time. This is also called volatility clustering. They are often described as "bursty", meaning that there may appear some jumps in the prediction.
+1. They are not good at modelling persistent volatility. For example, there may be periods that have more volatility than others, in which the volatility persists or stays high or low for some time. This is also called volatility clustering. They are often described as "bursty", meaning that there may appear some jumps in the prediction.
     
-2.  They are over-parameterised models, they require many parameters to make a good forecast.
+2. They are over-parameterised models, they require many parameters to make a good forecast.
     
-3.  They assume that positive and negative volatility distributions have the same impact on the response variable. To deal with these issues, ARCH models can be extended or generalised.
+3. They assume that positive and negative volatility distributions have the same impact on the response variable. To deal with these issues, ARCH models can be extended or generalised.
     
 
 ## GARCH models
@@ -63,11 +63,11 @@ GARCH models the variance of the time series as a regression of the values of a 
 
 We've seen that ARCH models have certain issues. Thanks to GARCH models these are sorted:
 
-1.  They are much better at capturing volatility clustering.
+1. They are much better at capturing volatility clustering.
     
-2.  They are parsimonious. Which means that they are able to achieve similar or better results with few parameters.
+2. They are parsimonious. Which means that they are able to achieve similar or better results with few parameters.
     
-3.  They don't assume that positive and negative volatility distributions have the same impact on the response variable, they are capable of modelling asymmetry effects.
+3. They don't assume that positive and negative volatility distributions have the same impact on the response variable, they are capable of modelling asymmetry effects.
     
 
 However, GARCH models still exhibit some issues. For example, they are not able to capture leverage effects, which refers to the fact that negative values have a greater influence on future volatilities than positive values.
@@ -78,7 +78,7 @@ Estimation of parameters Similarly to what we saw in ARIMA models, the parameter
 
 ## You can improve your ARIMA model!
 
-Check my Twitter thread on this!
+Check [this article](https://mlpills.dev/time-series/arima-garch-models/) or my Twitter thread on this!
 
 %[https://twitter.com/daansan_ml/status/1598289569761308672?s=20] 
 
