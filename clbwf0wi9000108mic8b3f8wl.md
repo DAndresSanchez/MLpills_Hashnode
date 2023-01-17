@@ -4,6 +4,8 @@ To start working on Machine Learning you need tools, and those tools need to be 
 
 We will go through how to set up a Python Data Science/ML environment. In this article, we will focus on Windows. We will also show how to install the main Data Science/ML libraries such as TensorFlow, Keras, Numpy and Pandas within our environment.
 
+If your OS is Linux, then check [this](https://mlpills.dev/setup/setup-a-python-environment-in-linux/) article instead.
+
 ## Install Python
 
 The first thing we need to do is install Python. For that, you have to go to [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/) and download Python 3.10.*X* (*X* refers to any subversion of Python that starts with 3.10, such as 3.10.9, 3.10.11), we won't be installing the latest version as TensorFlow has no support for Python 3.11:
