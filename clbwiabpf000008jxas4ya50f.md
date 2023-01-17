@@ -2,7 +2,7 @@
 
 To start working on Machine Learning you need tools, and those tools need to be installed in an environment. Think of an environment as a kind of workshop, except instead of a hammer or a screwdriver, you have Python and Keras.
 
-We will go through how to set up a Python Data Science/ML environment. In this article, we will focus on Linux, if you want to do this setup on Windows please [follow this tutorial](https://mlpills.hashnode.dev/setup-environment-in-windows). We will also show how to install the main Data Science/ML libraries such as TensorFlow, Keras, Numpy and Pandas within our environment.
+We will go through how to set up a Python Data Science/ML environment. In this article, we will focus on Linux, if you want to do this setup on Windows please [follow this tutorial](https://mlpills.dev/setup/setup-a-python-environment-in-windows/). We will also show how to install the main Data Science/ML libraries such as TensorFlow, Keras, Numpy and Pandas within our environment.
 
 ## Check Python
 
