@@ -8,16 +8,17 @@ There is something important to note. The presence of a cycle structure does not
 
 Time series data can be decomposed into different components:
 
-*   **Trend or secular element**: it is the long-term direction of the data
+* **Trend or secular element**: it is the long-term direction of the data
     
-*   **Seasonal element**: systematic, calendar-related variations. Consistently repeated at the same frequency.
+* **Seasonal element**: systematic, calendar-related variations. Consistently repeated at the same frequency.
     
-*   **Cyclical element**: periodical, but not seasonal variations.
+* **Cyclical element**: periodical, but not seasonal variations.
     
-*   **Residual or irregular element**: unsystematic, short-term fluctuations. It is also called noise.
+* **Residual or irregular element**: unsystematic, short-term fluctuations. It is also called noise.
     
 
 ![Fhq6XdmUAAEFbU5.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1669805287965/fHfOHezg9.png align="center")
+
 <center>*Example of seasonal time series data: Average temperature in London since 2016*</center>
 
 ## Decomposition models
@@ -38,29 +39,30 @@ This model implies that the seasonality and residuals are dependent on the trend
 
 This model can be transformed into an additive model by applying logarithmic transformations: log(y(t))=log(Trend)+log(Seasonality)+log(Residual)
 
-
 ![Fh6_rvGVsAEYKtQ.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1669806348070/-HLSuTHUZ.png align="center")
+
 <center>*Additive and multiplicative decomposition models*</center>
 
 #### Other models
 
 In addition to the previous two models, there are other models that are also used to decompose time series data:
 
-*   Pseudo-additive model
+* Pseudo-additive model
     
-*   Exponential smoothing
+* Exponential smoothing
     
-*   Locally Estimated Scatterplot Smoothing (LOESS)
+* Locally Estimated Scatterplot Smoothing (LOESS)
     
-*   Frequency-based methods
+* Frequency-based methods
     
 
 ![Fhq6X6FUoAA1znv.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1669803736064/swJSXxRkd.jpg align="center")
+
 <center>*Time Series **additive** decomposition for the temperature in London since 1995*</center>
 
 ## SARIMA model
 
-In [previous articles](https://mlpills.hashnode.dev/arima-models), we introduced the ARIMA model. This model is really useful when we don't have seasonal variations. They can model the trend of the time series data.
+In [previous articles](https://mlpills.dev/time-series/introduction-to-arima-models/), we introduced the ARIMA model. This model is really useful when we don't have seasonal variations. They can model the trend of the time series data.
 
 However, if our data exhibits seasonality, we will require a Seasonal ARIMA model or so-called SARIMA. The SARIMA model is an extension of the ARIMA model to explicitly model the Seasonal component in univariate data.
 
@@ -68,22 +70,22 @@ A **SARIMA(p,d,q)(P,D,Q)m** model is defined by seven parameters. Three come fro
 
 #### Trend
 
-*   *p* : trend autoregressive order
+* *p* : trend autoregressive order
     
-*   *d* : trend difference order
+* *d* : trend difference order
     
-*   *q* : trend moving average order
+* *q* : trend moving average order
     
 
 #### Seasonality
 
-*   *P* : seasonal autoregressive order
+* *P* : seasonal autoregressive order
     
-*   *D* : seasonal difference order
+* *D* : seasonal difference order
     
-*   *Q* : seasonal moving average order
+* *Q* : seasonal moving average order
     
-*   *m* : number of timesteps for a seasonal period
+* *m* : number of timesteps for a seasonal period
     
 
 ### Selection of parameters
@@ -92,7 +94,7 @@ The first parameter to choose is ***m***. This must be chosen by inspecting the 
 
 After knowing the number of timesteps of a single seasonal period, the data will be decomposed.
 
-***p*** and ***q*** will be selected as seen in [the previous article](https://mlpills.hashnode.dev/arima-models-1) by looking at the trend element using the ACF and PACF plots. ***d*** will be chosen so it makes the trend stationary.
+***p*** and ***q*** will be selected as seen in [the previous article](https://mlpills.dev/time-series/parameters-selection-in-arima-models/) by looking at the trend element using the ACF and PACF plots. ***d*** will be chosen so it makes the trend stationary.
 
 In the same way, ACF and PACF plots are used to estimate the values of ***P*** and ***Q***, by looking at the correlation of seasonal lags. ***D*** will be chosen to make a period of the seasonal element stationary.
 
@@ -105,11 +107,13 @@ The limitation of the SARIMA models is that they can be used only with single se
 ## Try it yourself!
 
 #### Decompose your data
+
 If you want to decompose some time series data, you can follow the step-by-step guide (and **code**) I shared on Twitter:
 
 %[https://twitter.com/daansan_ml/status/1593922071951654912?s=20] 
 
 #### Build your Auto-ARIMA model
+
 Here you have how to build your own Auto-ARIMA model:
 
 %[https://www.kaggle.com/code/davidandressanchez/build-an-auto-arima-model?scriptVersionId=111196414&cellId=2] 
